@@ -1,0 +1,31 @@
+{
+	"id": "707c253f-d37d-5651-af65-f1eae2e7266a",
+	"name": "GCM-TEST",
+	"requests": [
+		{
+			"id": "23a2006e-661e-a3ad-2ab0-dfbf0c7ffb2b",
+			"headers": "Content-Type: application/json\nAuthorization: key=AQUI EL AUTHORIZATION KEY DE LA CONSOLE API\n",
+			"url": "https://gcm-http.googleapis.com/gcm/send",
+			"pathVariables": {},
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "707c253f-d37d-5651-af65-f1eae2e7266a",
+			"data": [],
+			"dataMode": "raw",
+			"name": "GCM Rest Tester",
+			"description": "Test básico de postman para enviar notificaciones push al dispositivo. Deben configurarse:\n\n+ Header: Authorization\n+ Body parameter: registration_id",
+			"descriptionFormat": "html",
+			"time": 1464607316847,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n    \"registration_ids\": [\"AQUI EL REGISTER ID OBTENIDO EN LA APP MOVIL\"],\n    \"data\": {\n        \"title\": \"ITecno Rocks!\",\n        \"message\": \"Mensaje de ejemplo para la notificación.\",\n        \"style\": \"inbox\",\n        \"summaryText\": \"Tiene %n% notificaciones\",\n        \"actions\": [\n            { \"title\": \"VER DETALLE\", \"callback\": \"accion1_callback\", \"foreground\": true},\n            { \"title\": \"NO NOTIFICAR MAS\", \"callback\": \"accion2_callback\", \"foreground\": false}\n        ]\n    }\n}"
+		}
+	],
+	"order": [
+		"23a2006e-661e-a3ad-2ab0-dfbf0c7ffb2b"
+	],
+	"timestamp": 1464607316847
+}
