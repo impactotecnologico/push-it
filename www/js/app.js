@@ -21,7 +21,7 @@ angular.module('starter', ['ionic'])
 
     var push = PushNotification.init({
         android: {
-            senderID: "583938065086"
+            senderID: "ESCRIBIR AQUI EL SENDER ID ESPECIFICO DE LA CUENTA GOOGLE"
         },
         ios: {
             alert: "true",
